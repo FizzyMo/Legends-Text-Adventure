@@ -10,7 +10,7 @@ import os
 # imports only the sleep function from the time module
 from time import sleep
 
-
+#Introduction
 def main():
     clear_screen()
 
@@ -26,7 +26,7 @@ def main():
         else:
             print("Invalid input! Please enter a name without numbers or punctuation.")
     
-    sleep(3)
+    sleep(5)
     clear_screen()
     print("Yet, today is not about summoner spells or pixelated battles; it's about an adventure untold.")
     print("A choose-your-own odyssey where the destiny of two enchanting soulmates, Xayah and Rakan, lies in your hands.")
@@ -82,6 +82,7 @@ def scene1():
                         Xayah-I touch Rakan face "Lets go"
                         """
                     )
+                    togetherRakan()
                     return
             else:
                 print("Please type a valid choice: 1 or 2")
@@ -98,6 +99,8 @@ def layOnGround():
             Type your choice: 3
             """
         )
+        
+
         while True:
             c1 = input("Enter 3: ")
             if c1.isdigit() and int(c1) == 3:
@@ -118,6 +121,18 @@ def layOnGround():
                     Please choice 3 to continue: 3
                     """
                 )
+def togetherRakan():
+    while True:
+        sleep(1)
+        print("""
+        Xayah-I stare deep into Rakan's eyes. "You know we could die right?"
+        Rakan- "Babe nothing can stop us". He then dips Xayah into a romantic kiss.
+        As we head closer to the gate. Rakan goes ahead to create a distraction. 
+        While Xayah waits for moment to create chaos on those who put them in prison.
+        """
+        )
+        goChoice()
+        return
 
 def faceHumansOrRakan():
     while True:
@@ -223,12 +238,13 @@ def goChoice():
             """
             Xayah-The wind is starting to pick up.
             I use this moment to get higher ground. Who knows how long the wind will continue.
-            I laugh high into the air. Spreading my wings
-            Allowing the air to carry me high above the prison grounds
+            I laugh high into the air. Spreading my wings.
+            Allowing the air to carry me high above the prison grounds.
+            I see Rakan
             
             What happens during Xayah's flight?
             
-            Does Xayah get shot down or sees Rakan?
+            Does Xayah get shot down or see Rakan?
             
             Type your choice: 8. Shoot or  9. Rakan
         """
@@ -296,8 +312,8 @@ def PlanRak():
                 elif choice == 11:
                     print(
                         """
-                Xayah-"I've killed more people in this place"
-                I start to laugh
+                Xayah-"Take out two of the guards while Rakan deals with the other two guards."
+                "Good enough for me let's save him"    
                 """
                     )
                     return
@@ -305,7 +321,18 @@ def PlanRak():
                 print("Please type a valid choice: 10 or 11")
 
             
-
+def Lastscene2():
+    while True:
+        sleep(1)
+        print("""
+        Rakan-While I lay on the ground pretending to be dead I hear Xayah getting closer
+        Xayah-"Can you stop playing around I saw you take out those guards than lay down."
+        Rakan-"Hubba hubba. Someone was watching."
+        Xayah- "Of course I am. Such a dork let's go home." I start to walk away.
+        Rakan-"Wait for me!"
+        
+              """)
+        love()
 
 def Lastscene():
     while True:
