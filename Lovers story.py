@@ -65,19 +65,19 @@ def scene1():
 
         print("What do you think Rakan does next?")
         print(
-            " 4. Mess up the plan and gets caught\n 5. Distracts the guards and meets up with Xayah\n Type Mess or Distracts"
+            " 1. Mess up the plan and gets caught\n 2. Distracts the guards and meets up with Xayah\n Type Mess or Distracts"
         )
 
         while True:
-            c1 = input("Enter your choice (4 or 5):")
-            if c1.isdigit() and int(c1) in (4, 5):
+            c1 = input("Enter your choice (1 or 2):")
+            if c1.isdigit() and int(c1) in (1, 2):
                 choice = int(c1)
-                if choice == 4:
+                if choice == 1:
                     print(
                         """Xayah-I am watching Rakan from a distance. Alright things are going smooth. Time to move. "NO NO!! PLEASE! RAKAN!!!!!!!!!!!!!!!!!!!!!!"
                         """
                     )
-                    heartBreak()
+                    layOnGround()
                     return
                 elif choice == 5:
                     print(
@@ -93,77 +93,86 @@ def scene1():
                     )
                     return
             else:
-                print("Please type a valid choice: 4 or 5")
+                print("Please type a valid choice: 1 or 2")
 
+def layOnGround():
+    while True:
+        sleep(1)
+        print(
+            """
+            Xayah-I passed out from the trauma of seeing my love being taken away by HUMANS!
+            ........ I slowly start to wake up
+            What is the first thing Xayah sees when she opens her eyes?
+            You continue to lay on the ground with a broken heart\n
+            Type your choice: 1
+            """
+        )
+        while True:
+            c1 = input("Enter 1:")
+            if c1.isdigit() and int(c1) == 1:
+                print(
+                    """
+                    Xayah-As I continue to lay here. All I can feel is heartbreak. Heartbreak from seeing humans even think of touching him.
+                    We are partners!
+                    NOOOO we are not just partners.
+                    Rakan is my soul mate, my lover, my best friend.
+                    My mind begins to race with rage!
+                    """
+                )
+                faceHumansOrRakan()
+                return
+            else:
+                print(
+                    """
+                    Please choice 1 to continue: 1
+                    """
+                )
 
-
-
-def heartBreak():
+def faceHumansOrRakan():
+    ans = "incorrect"
     sleep(1)
     print(
         """
-        Xayah-I passed out from the trama of seeing my love being taken away by HUMANS!
-        ........ I slowly start to wake up
-        What is the first thing Xayah sees when she opens her eyes?
-        You continue to lay on the ground with a broken heart\n
-        Type your choice: Lay
-    """
-    )
-    c1 = input()
-    sleep(1)
-    ans = "incorrect"
-    while ans == "incorrect":
-        if c1.capitalize() == "Lay" or "lay":
-            print(
-                """
-        Xayah-As I continue to lay here. All I can feel is heartbreak. Heartbreak from seeing humans even think of touching him.
-        We are partners!
-        NOOOO we are not just partners.
-        Rakan is my soul mate, my lover, my best friend.
-        My mind beings to race with rage!
-        """
-            )
-            ans = "incorrect"
-            sleep(1)
-            print(
-                """
         Xayah- I shoot up from my depression. Dust off my feathers. Get my mind straight and think of how to find Rakan.
         He needs me!
         I dart out of the forest and in front of me is the enemy. HUMANS!
         I stare directly into their soul and without even realizing it. My feathers are entering their bodies.
         More guards are coming from all directions. If I don't find a way out I am going to be surrounded soon.
-        Noise from near by wall-"BOOM"
+        Noise from nearby wall-"BOOM"
         Xayah-"Huh"\n
                 
         What is the noise that Xayah heard?\n
         Type your choice: Rakan or Humans
-            """
-            )
-            c1 = input()
-        elif c1.capitalize() == "Humans" or "humans":
+    """
+    )
+    c1 = input()
+    while ans == "incorrect":
+        if c1.capitalize() == "Humans" or c1.lower() == "humans":
             print(
                 """
-        Xayah- In a fit of rage I kill everyone in sight. Knowing there is nothing left.
-        """
+                Xayah- In a fit of rage I kill everyone in sight. Knowing there is nothing left.
+                """
             )
             ans = "correct"
             exit()
-
-        elif c1.capitalize() == "Rakan" or "rakan":
+        elif c1.capitalize() == "Rakan" or c1.lower() == "rakan":
             print(
                 """
-        Xayah-I dream of Rakan. I remember of how he tells me to be careful.
-        That was the last time I saw him before we parted ways...........
-        My hearts continues to sink
-        """
+                Xayah-I dream of Rakan. I remember how he tells me to be careful.
+                That was the last time I saw him before we parted ways...........
+                My heart continues to sink
+                """
             )
             sleep(3)
             ans = "correct"
             scene2()
-
-
-
-
+        else:
+            print(
+                """
+                Please type a valid choice: Humans, or Rakan
+                """
+            )
+            c1 = input()
 
 def scene2():
     sleep(1)
