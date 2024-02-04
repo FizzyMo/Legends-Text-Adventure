@@ -93,7 +93,7 @@ def scene1():
                     )
                     return
             else:
-                print("Please type a valid choice: 4 or 5")
+                print("Please type a valid choice: 1 or 2")
 
 def layOnGround():
     while True:
@@ -346,7 +346,7 @@ def exit():
 def love():
     sleep(2)
     print("Hoped you enjoyed the story")
-    print("copyright:Carisa Saenz-Videtto")
+    print("copyright: Carisa Saenz-Videtto")
     sys.exit()
 
 
