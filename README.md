@@ -19,3 +19,6 @@ Make sure you have Python installed on your system.
 1. Based on your choices, the game will progress, and different outcomes will be presented.
 
 1. After the game ends, restart program to try again.
+
+## Code Visual
+ ![](XayRak_gif.gif)
