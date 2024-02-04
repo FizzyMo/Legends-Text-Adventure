@@ -79,7 +79,7 @@ def scene1():
                     )
                     layOnGround()
                     return
-                elif choice == 5:
+                elif choice == 2:
                     print(
                         """
                         Rakan-He leaps back and forth between the walls leading the guards away.
@@ -93,7 +93,7 @@ def scene1():
                     )
                     return
             else:
-                print("Please type a valid choice: 1 or 2")
+                print("Please type a valid choice: 4 or 5")
 
 def layOnGround():
     while True:
@@ -104,12 +104,12 @@ def layOnGround():
             ........ I slowly start to wake up
             What is the first thing Xayah sees when she opens her eyes?
             You continue to lay on the ground with a broken heart\n
-            Type your choice: 1
+            Type your choice: 3
             """
         )
         while True:
-            c1 = input("Enter 1:")
-            if c1.isdigit() and int(c1) == 1:
+            c1 = input("Enter 3: ")
+            if c1.isdigit() and int(c1) == 3:
                 print(
                     """
                     Xayah-As I continue to lay here. All I can feel is heartbreak. Heartbreak from seeing humans even think of touching him.
@@ -124,55 +124,56 @@ def layOnGround():
             else:
                 print(
                     """
-                    Please choice 1 to continue: 1
+                    Please choice 3 to continue: 3
                     """
                 )
 
 def faceHumansOrRakan():
-    ans = "incorrect"
-    sleep(1)
-    print(
+    while True:
+        sleep(1)
+        print(
+            """
+            Xayah- I shoot up from my depression. Dust off my feathers. Get my mind straight and think of how to find Rakan.
+            He needs me!
+            I dart out of the forest and in front of me is the enemy. HUMANS!
+            I stare directly into their soul and without even realizing it. My feathers are entering their bodies.
+            More guards are coming from all directions. If I don't find a way out I am going to be surrounded soon.
+            Noise from nearby wall-"BOOM"
+            Xayah-"Huh"\n
+                    
+            What is the noise that Xayah heard?\n
+            Enter your choice: 4. Rakan or 5. Human
         """
-        Xayah- I shoot up from my depression. Dust off my feathers. Get my mind straight and think of how to find Rakan.
-        He needs me!
-        I dart out of the forest and in front of me is the enemy. HUMANS!
-        I stare directly into their soul and without even realizing it. My feathers are entering their bodies.
-        More guards are coming from all directions. If I don't find a way out I am going to be surrounded soon.
-        Noise from nearby wall-"BOOM"
-        Xayah-"Huh"\n
-                
-        What is the noise that Xayah heard?\n
-        Type your choice: Rakan or Humans
-    """
-    )
-    c1 = input()
-    while ans == "incorrect":
-        if c1.capitalize() == "Humans" or c1.lower() == "humans":
-            print(
-                """
-                Xayah- In a fit of rage I kill everyone in sight. Knowing there is nothing left.
-                """
-            )
-            ans = "correct"
-            exit()
-        elif c1.capitalize() == "Rakan" or c1.lower() == "rakan":
-            print(
-                """
-                Xayah-I dream of Rakan. I remember how he tells me to be careful.
-                That was the last time I saw him before we parted ways...........
-                My heart continues to sink
-                """
-            )
-            sleep(3)
-            ans = "correct"
-            scene2()
-        else:
-            print(
-                """
-                Please type a valid choice: Humans, or Rakan
-                """
-            )
-            c1 = input()
+        )
+        while True:
+            c1 = input("Enter 4. Rakan or 5. Human:")
+            if c1.isdigit() and int(c1) in (4, 5):
+                choice = int(c1)
+                if choice == 4:
+                    print(
+                        """
+                        Xayah- In a fit of rage I kill everyone in sight. Knowing there is nothing left.
+                        """
+                    )
+                    scene2()
+                    return            
+                elif choice == 5:
+                    print(
+                        """
+                        Xayah-I dream of Rakan. I remember how he tells me to be careful.
+                        That was the last time I saw him before we parted ways...........
+                        My heart continues to sink
+                        """
+                    )
+                    return            
+            else:
+                print(
+                    """
+                    Please type a valid choice: 4 or 5
+                    """
+                )
+
+            
 
 def scene2():
     sleep(1)
