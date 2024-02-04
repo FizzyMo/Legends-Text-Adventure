@@ -12,42 +12,33 @@ from time import sleep
 
 
 def main():
+    clear_screen()
+
+    print("\nCast your mind back to the year 2009, when League of Legends was forged into existence.")
+    print("Feel the weight of years, as the game grew, evolved, and etched its mark in the annals of gaming history.")
+    print("Riot Games, the architects of this digital battleground, stand as pioneers in the vast world of multiplayer online battle arenas.")
+
     while True:
         name = input("Enter your name: ")
-
-    # Check for only alphabetic characters (no numbers or punctuation)
         if name.isalpha():
-            print("Hello gamer " + name)
+            print(f"And you, {name}, have ventured into a League of Legends story.")
             break
         else:
             print("Invalid input! Please enter a name without numbers or punctuation.")
+    
+    sleep(3)
+    clear_screen()
+    print("Yet, today is not about summoner spells or pixelated battles; it's about an adventure untold.")
+    print("A choose-your-own odyssey where the destiny of two enchanting soulmates, Xayah and Rakan, lies in your hands.")
+    print("Are you prepared to embark on this journey, shaping fate with every decision?")
+    print("The stage is set. The tale awaits.")
+    print("Let the adventure commence!\n\n\n")
 
-    sleep(5)
+def clear_screen():
+    if os.name == 'nt':  # For Windows
+        os.system('cls')
+    
 
-    print("\nLeague was created in 2009\nDoes anyone feel old?")
-    print(
-        "The company who makes League is Riot Games\nLeague is a multiplayer online battle arena."
-    )
-    print(
-        "I have been playing league for six years.\nNow enough about that let me tell you a story."
-    )
-    sleep(8)
-    os.system("cls")
-    print("This is a choose your own adventure story.")
-    print("This is about two soulmates.\n\nXayah and Rakan")
-    print("Your job is to guide their story.\nYou ready?")
-    print("Lets go! It will be fun\n\n\n\n")
-
-    sleep(8)
-    os.system("cls")
-
-
-    # //timer to clear screen
-    sleep(2)
-
-    # // clears screen
-    os.system("cls")
-    scene1()
 
 # insert story
 def scene1():
@@ -346,9 +337,10 @@ def exit():
 def love():
     sleep(2)
     print("Hoped you enjoyed the story")
-    print("copyright: Carisa Saenz-Videtto")
+    print("copyright:Carisa Saenz-Videtto")
     sys.exit()
 
 
 if __name__ == "__main__":
     main()
+    scene1()
