@@ -146,7 +146,7 @@ def faceHumansOrRakan():
         """
         )
         while True:
-            c1 = input("Enter 4. Rakan or 5. Human:")
+            c1 = input("Enter 4. Rakan or 5. Human: ")
             if c1.isdigit() and int(c1) in (4, 5):
                 choice = int(c1)
                 if choice == 4:
@@ -155,7 +155,7 @@ def faceHumansOrRakan():
                         Xayah- In a fit of rage I kill everyone in sight. Knowing there is nothing left.
                         """
                     )
-                    scene2()
+                    RevPlan()
                     return            
                 elif choice == 5:
                     print(
@@ -173,178 +173,172 @@ def faceHumansOrRakan():
                     """
                 )
 
+def RevPlan():
+    while True:
+        sleep(1)
+        print(
+            """
+            Xayah-As I wake up from the horror that my own mind has been reminding me.
+            A new day is burning my eyes from all the crying I must have been doing while I was asleep.
+            Will I ever see Rakan again? Although it probably has been only moments his absence feels like a life time.
+            "Where do I go from here?"
+            What does Xayah do now?
+            Takes a moment to seek revenge? Or Escape prison like planned without Rakan?
+            Type: 6. Revenge or 7. Rakan
+        """
+        )
+    
+        sleep(1)
+
+        while True:
+            c1= input("Enter your choice (6 or 7):") 
+            if c1.isdigit() and int(c1) in (6, 7):
+                choice = int(c1)
+                if choice == 6:
+                    print(
+                        """
+                Xayah-I take a moment to slow down my mind to remember every detail of the humans who took Rakan.
+                What did they look like?
+                Where did they take Rakan?
+                How will I get him back?
+                What do I need to pull it off?
+                Am I strong enough?
+                """
+                    )
+                    sleep(1)
+                    goChoice()
+                    return
+                elif choice == 7:
+                    print(
+                        """
+                        Xayah-"Time to get fight"
+                        """
+                    )
+                    return
+            
+            else:
+                print(
+                    """
+                Please type a valid choice: 6 or 7
+            """
+                )
+
+
+
+def goChoice():
+    while True:
+        sleep(1)
+        print(
+            """
+            Xayah-The wind is starting to pick up.
+            I use this moment to get higher ground. Who knows how long the wind will continue.
+            I laugh high into the air. Spreading my wings
+            Allowing the air to carry me high above the prison grounds
+            
+            What happens during Xayah's flight?
+            
+            Does Xayah get shot down or sees Rakan?
+            
+            Type your choice: 8. Shoot or  9. Rakan
+        """
+        )
+
+        while True:
+            c1 = input("Enter your choice (8 or 9):") 
+            if c1.isdigit() and int(c1) in (8, 9):
+                choice = int(c1)
+                if choice == 8:
+                    print(
+                        """
+                You died
+                """
+                    )
+                    exit()
+                elif choice == 9:
+                    print(
+                        """
+                Xayah-"There you are"
+                """
+                    )
+                    PlanRak()
+                    return
+            
+            else:
+                print(
+                    """
+                ("Please type a valid choice: 8 or 9")
+            """
+                )
+
+
+def PlanRak():
+    while True:
+        sleep(1)
+        print(
+            """
+            Xayah-"Alright..
+            There was four humans. Two in front of Rakan and two behind him."
+            "They took him to the North entrance. How can I get there from here?"
+            
+            Does Xayah risk it all and go straight to the gate?
+            Or
+            Make a plan?
+            Type:Risk or Plan
+        """
+        )
+    
+        while True:
+            c1 = input("Enter your choice (10 or 11):")
+            if c1.isdigit() and int(c1) in (10, 11):
+                choice = int(c1)
+                if choice == 10:
+                    print(
+                        """
+                Xayah-Knowing nothing matters but Rakan. I take a deep breath. Shake off any dark thoughts and start running directly to the North gate.
+                Maybe I am not that far behind and can still save him.
+                "Hold on my love! Im coming!"
+                """
+                    )
+                    sleep(1)            
+                    Lastscene()
+                    return
+                elif choice == 11:
+                    print(
+                        """
+                Xayah-"I've killed more people in this place"
+                I start to laugh
+                """
+                    )
+                    return
+            else:
+                print("Please type a valid choice: 10 or 11")
+
             
 
-def scene2():
-    sleep(1)
-    print(
-        """
-        Xayah-As I wake up from the horror that my own mind has been reminding me.
-        A new day is burning my eyes from all the crying I must have been doing while I was asleep.
-        Will I ever see Rakan again? Although it probably has been only moments his absence feels like a life time.
-        "Where do I go from here?"
-        What does Xayah do now?
-        Takes a moment to seek revenge? Or Escape prison like planned without Rakan?
-        Type:Revenge or Rakan
-    """
-    )
-    c1 = input()
-    sleep(1)
-    ans = "incorrect"
-    while ans == "incorrect":
-        if c1.capitalize() == "Revenge" or "revenge":
-            print(
-                """
-        Xayah-I take a moment to slow down my mind to remember every detail of the humans who took Rakan.
-        What did they look like?
-        Where did they take Rakan?
-        How will I get him back?
-        What do I need to pull it off?
-        Am I strong enough?
-        """
-            )
-            sleep(4)
 
-            ans = "correct"
-            scene3()
-        elif c1.capitalize() == "Rakan" or "rakan":
-            print(
-                """
-        Xayah-"Time to get fight"
+def Lastscene():
+    while True:
+        sleep(1)
+        print(
+            """
+            Xayah-As my feathers are falling into all directions with a mind of their own.
+            As I get closer to the North gate I can see traces of Rakan's golden feathers on the ground. He is close........
+            "He better be ok or ELSE!"
+            I stop right in front of two guards. One guard directly in front of me and another holding Rakan by the wrists.
+            I smurk
+            "Honey you ok?"
+            Rakan-"Oh this is nothing, me and the guys were just going for a morning walk"
+            Xayah- I roll my eyes. Even in danger he still has something smart to say
+            Xayah-I snap my fingers and my quills tear through both guards.. leaving their corpes on the ground I take Rakan into my arms
         """
-            )
-            ans = "correct"
-            goback()
-        elif c1.capitalize() != "Revenge" and c1.capitalize() != "Rakan":
-            ans = "incorrect"
-            print(
-                """
-            Please type a valid choice: Revenge or Rakan
-        """
-            )
-            # Add try again instead of end program
-
-            exit()
-
-def goback():
-    sleep(1)
-    print(
-        """
-        Xayah-The wind is starting to pick up.
-        I use this moment to get higher ground. Who knows how long the wind will continue.
-        I laugh high into the air. Spreading my wings
-        Allowing the air to carry me high above the prison grounds
-        
-        What happens during Xayah's flight?
-        
-        Does Xayah get shot down or sees Rakan?
-        
-        Type your choice: Shot or Rakan
-    """
-    )
-
-    c1 = input()
-    sleep(1)
-    ans = "incorrect"
-    while ans == "incorrect":
-        if c1.capitalize() == "Shot" or "shot":
-            print(
-                """
-        You died
-        """
-            )
-            exit()
-        elif c1.capitalize() == "Rakan" or "rakan":
-            print(
-                """
-        Xayah-"There you are"
-        I shot down like a storm of furry. Grab Rakan and forget this ever happened.
-        """
-            )
-            ans = "correct"
-            exit()
-        if c1.capitalize() != "":
-            print(
-                """
-            Please type a valid choice: Shot or Rakan
-        """
-            )
-            # Add try again instead of end program
-
-            exit()
-
-def scene3():
-    sleep(1)
-    print(
-        """
-        Xayah-"Alright..
-        There was four humans. Two in front of Rakan and two behind him."
-        "They took him to the North entrance. How can I get there from here?"
-        
-        Does Xayah risk it all and go straight to the gate?
-        Or
-        Make a plan?
-        Type:Risk or Plan
-    """
-    )
-    c1 = input()
-    sleep(1)
-    ans = "incorrect"
-    while ans == "incorrect":
-        if c1.capitalize() == "Risk" or "risk":
-            print(
-                """
-        Xayah-Knowing nothing matters but Rakan. I take a deep breath. Shake off any dark thoughts and start running directly to the North gate.
-        Maybe I am not that far behind and can still save him.
-        "Hold on my love! Im coming!"
-        """
-            )
-            sleep(2)
-
-            ans = "correct"
-            scene4()
-        elif c1.capitalize() == "Plan" or "plan":
-            print(
-                """
-        Xayah-"I've killed more people in this place"
-        I start to laugh
-        """
-            )
-            ans = "correct"
-            goback()
-        if c1.capitalize() != "":
-            print(
-                """
-            Please type a valid choice: Mess, Distracts, or Does
-        """
-            )
-            # Add try again instead of end program
-
-            exit()
-
-
-def scene4():
-    sleep(1)
-    print(
-        """
-        Xayah-As my feathers are falling into all directions with a mind of their own.
-        As I get closer to the North gate I can see traces of Rakan's golden feathers on the ground. He is close........
-        "He better be ok or ELSE!"
-        I stop right in front of two guards. One guard directly in front of me and another holding Rakan by the wrists.
-        I smurk
-        "Honey you ok?"
-        Rakan-"Oh this is nothing, me and the guys were just going for a morning walk"
-        Xayah- I roll my eyes. Even in danger he still has something smart to say
-        Xayah-I snap my fingers and my quills tear through both guards.. leaving their corpes on the ground I take Rakan into my arms
-    """
-    )
-    love()
+        )
+        love()
 
 
 def exit():
     sleep(2)
     print("Goodbye!")
-    print("copyright:Carisa Saenz-Videtto")
+    print("copyright: Carisa Saenz-Videtto")
     # Add retry
     sys.exit()
 
