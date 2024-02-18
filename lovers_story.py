@@ -185,12 +185,19 @@ Choice 5: Driven by fury, Xayah makes the decision to confront the enforcers dir
                 elif choice == 5:
                     print(
                         """
-                        Xayah-I dream of Rakan. I remember how he tells me to be careful.
-                        That was the last time I saw him before we parted ways...........
-                        My heart continues to sink
+            Xayah-I dream of Rakan. I remember how he tells me to be careful.
+            That was the last time I saw him before we parted ways. My heart continues to sink.
+            Fueled by rage and an unyielding desire to protect Rakan, I abandon evasion and dive straight towards the enforcers on their magical gliders.
+            My feathers surround me like a tempest as I descend, a force of nature ready to confront those who dare threaten my love.
+            The enforcers, taken aback by my sudden offensive, try to adjust their aim, but the chaotic dance of my feathers makes it difficult for them to lock on.
+            In a burst of fury, I unleash a barrage of razor-sharp feathers towards the approaching threat.
+            The clash between magic and feathers unfolds in the night sky. The air echoes with the sounds of battle as Xayah fights to keep the enforcers at bay.
+            Rakan, watching from below, is awestruck by the display of power.
+            Rakan - "That's my girl!"
                         """
                     )
-                    return            
+                    faceHumansOrRakanEnd()
+                    return 
             else:
                 print(
                     """
@@ -234,9 +241,23 @@ What does Xayah decide?
                 elif choice == 7:
                     print(
                         """
-                        Xayah-"Time to fight"
+            Xayah-"Time to fight"
+            Suppressing the burning desire for revenge, I focus on the original plan escape and find Rakan.
+            The winds of determination propel me forward as I navigate through the prison grounds, avoiding any potential threats.
+            As I move stealthily, weaving through shadows and ducking behind structures, the distant sounds of alarms and shouts echo through the air.
+            The chaos caused earlier has drawn the attention of more guards, but their numbers are no match for my agility and lethal precision.
+            The prison layout becomes familiar as I approach the designated escape route. It's a labyrinth of corridors and hidden passages,
+            known only to those who have spent years studying the intricacies of the prison's design.
+            Suddenly, a group of guards blocks my path. There's no avoiding them, and confrontation seems inevitable. With a deep breath,
+            I summon my feathers, ready to face the onslaught.
+            The guards, however, are hesitant. The tales of my earlier rampage have spread, and fear is evident in their eyes. Without a word,
+            they part, allowing me a clear path forward.
+            As I reach the exit, the night air greets me, and the open sky beckons. Freedom is within reach.
+            The moonlight illuminates my golden feathers, a stark contrast to the darkness that surrounds me.
+            Rakan, wherever you are, I'm coming.
                         """
                     )
+                    RevPlanEnd()
                     return
             
             else:
@@ -367,6 +388,19 @@ def Lastscene():
         """
         )
         love()
+def faceHumansOrRakanEnd():
+        print("As Xayah lands beside Rakan, her injured wing a testament to the intensity of the battle,\nthey exchange a glance filled with both relief and concern")
+        print("Rakan - You're incredible, love. But we need to go before more reinforcements arrive.")    
+        print("Together, hand in hand, they vanish into the night, leaving the scene of their triumph behind.")
+        sys.exit()
+        
+
+def RevPlanEnd():
+    print("Xayah's determination to stick to the original plan allows her to navigate the prison's challenges and escape.")
+    print("The journey to find Rakan continues in the vast expanse beyond the prison walls.")
+    print("If you'd like to embark on another adventure or have a new story idea, feel free to create it!")
+    sys.exit()
+
 
 def exit():
     sleep(2)
