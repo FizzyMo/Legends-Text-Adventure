@@ -157,21 +157,27 @@ def faceHumansOrRakan():
             Suddenly, there's danger as I float through the air. Crossbow-wielding enforcers in the air arrive on magical gliders.
             Xayah is in their sights.
             She floats through the air, suddenly overcome with a sense of threat.
-            Enforcement on magical gliders bearing crossbows draw near. Their sights are set on Rakan.
-            Now is the crucial moment for Xayah to decide:\n
+            Enforcement on magical gliders bearing crossbows draw near. Their sights are set on Rakan.\n
+Now is the crucial moment for Xayah to decide:\n
 Choice 4: As she continues to fly in the direction of Rakan, Xayah makes evasive maneuvers in an effort to dodge the incoming arrows.
 Choice 5: Driven by fury, Xayah makes the decision to confront the enforcers directly in an effort to remove the threat and safeguard Rakan.      
             
         """
         )
         while True:
-            c1 = input("Enter 4: Fly or 5 Fury: ")
+            c1 = input("Enter your choice (4 or 5): ")
             if c1.isdigit() and int(c1) in (4, 5):
                 choice = int(c1)
                 if choice == 4:
                     print(
                         """
-            Xayah- In a fit of rage I kill everyone in sight. Knowing there is nothing left.
+                Xayah - In a fit of rage, I unleash a storm of deadly feathers, swiftly eliminating every enforcer in sight.
+                The air is thick with tension as the last echoes of battle fade away. I stand alone, surrounded by the fallen.
+                As the reality of the aftermath settles, I find myself consumed by a haunting emptiness.
+                The victory is hollow without Rakan by my side. I collapse to the ground, overwhelmed by the weight of loss.
+                Xayah - As I wake up from the horror that my own mind has been reminding me,
+                a new day burns my eyes from the tears shed during my restless sleep. Though only moments may have passed,
+                Rakan's absence feels like a lifetime.
                         """
                     )
                     RevPlan()
@@ -197,13 +203,11 @@ def RevPlan():
         sleep(1)
         print(
             """
-            Xayah-As I wake up from the horror that my own mind has been reminding me.
-            A new day is burning my eyes from all the crying I must have been doing while I was asleep.
-            Will I ever see Rakan again? Although it probably has been only moments his absence feels like a life time.
-            "Where do I go from here?"
-            What does Xayah do now?
-            Takes a moment to seek revenge? Or Escape prison like planned without Rakan?
-            Type: 6. Revenge or 7. Rakan
+            "Where do I go from here?"\n
+Now faced with a critical decision:
+Option 6: Xayah takes a moment to seek revenge, driven by the burning desire to make those responsible for her anguish pay. 
+Option 7: Xayah chooses to stick to the original plan and escape the prison, determined to find Rakan regardless of the cost. 
+What does Xayah decide?
         """
         )
     
@@ -251,13 +255,10 @@ def goChoice():
             I use this moment to get higher ground. Who knows how long the wind will continue.
             I laugh high into the air. Spreading my wings.
             Allowing the air to carry me high above the prison grounds.
-            I see Rakan
-            
-            What happens during Xayah's flight?
-            
-            Does Xayah get shot down or goes to Rakan?
-            
-            Type your choice: 8. Shot or  9. Rakan
+            I see Rakan\n
+What happens during Xayah's flight?
+Does Xayah get shot down or goes to Rakan?
+8. Shot or  9. Rakan
         """
         )
 
@@ -292,28 +293,30 @@ def PlanRak():
         sleep(1)
         print(
             """
-            Xayah-"There you are."
-            Xayah takes a moment to assess the situation.
-            Xayah-"Alright. There were four humans. Two in front of Rakan and two behind him.
+            Xayah - "There you are."
+            Taking a deep breath, I assess the situation. The wind still beneath my wings, I gather my resolve.
+            Xayah - "Alright. There were four humans. Two in front of Rakan and two behind him.
             They took him to the North entrance. How can I get there from here?"\n
-            Now faced with a critical decision:\n
-            Option 10: Xayah decides to risk it all and go straight to the gate, driven by urgency and the need to reach Rakan as quickly as possible.
-            Option 11: Xayah opts to make a plan, carefully considering the best approach to rescue Rakan without jeopardizing their chances.
-            What does Xayah decide?
-            Enter your choice (10 or 11)
+Now faced with a critical decision:\n
+10: Xayah decides to risk it all and go straight to the gate, driven by urgency and the need to reach Rakan as quickly as possible.
+11: Xayah opts to make a plan, carefully considering the best approach to rescue Rakan without jeopardizing their chances.
+What does Xayah decide?\n
+Enter your choice (10 or 11)
         """
         )
     
         while True:
-            c1 = input("Enter your choice (10 or 11):")
+            c1 = input("Enter your choice (10 or 11): ")
             if c1.isdigit() and int(c1) in (10, 11):
                 choice = int(c1)
                 if choice == 10:
                     print(
                         """
-                Xayah-Knowing nothing matters but Rakan. I take a deep breath. Shake off any dark thoughts and start running directly to the North gate.
-                Maybe I am not that far behind and can still save him.
-                "Hold on my love! Im coming!"
+            Xayah - Knowing nothing matters but Rakan, I take a deep breath.
+            I shake off any dark thoughts and start running directly to the North gate. Maybe I am not that far behind and can still save him.
+            "Hold on, my love! I'm coming!"
+            As my feathers fall into all directions with a mind of their own, I get closer to the North gate.
+            Traces of Rakan's golden feathers on the ground give me hope. He is close.
                 """
                     )
                     sleep(1)            
@@ -322,46 +325,47 @@ def PlanRak():
                 elif choice == 11:
                     print(
                         """
-                Xayah-"Take out two of the guards while Rakan deals with the other two guards."
-                "Good enough for me let's save him"    
+            Xayah - "Take out two of the guards while Rakan deals with the other two guards. Good enough for me. Let's save him."
+            In the shadows, we silently approach the prison's entrance. Rakan, ever the charming distraction,
+            engages the attention of the guards while I prepare my feathers for a swift and precise strike.
+            As Rakan engages in playful banter, distracting the guards, I release my deadly feathers with unparalleled precision.
+            Two guards fall without a sound, their eyes widening in surprise before they crumple to the ground.   
+            Rakan - "Smooth, love."
+            Xayah - "Save the compliments for later. We're not out of this yet."
+            With half the guards dealt with, we move swiftly towards the remaining two. Rakan's charm is a weapon in itself,
+            disorienting the guards just enough for me to strike. The night air echoes with the clash of metal and the thud of incapacitated foes.
+            We reach the North entrance, victorious in our stealthy approach. The gate looms ahead, and Rakan gives me a sly grin.
+            Rakan - "Shall we?"
+            Xayah - "Let's get out of here."
+            Hand in hand, we slip through the gate, leaving the prison behind. The moonlight bathes us as we disappear into the night,
+            ready for the adventures that await. 
                 """
                     )
                     return
             else:
                 print("Please type a valid choice: 10 or 11")
 
-            
-def Lastscene2():
-    while True:
-        sleep(1)
-        print("""
-        Rakan-While I lay on the ground pretending to be dead I hear Xayah getting closer
-        Xayah-"Can you stop playing around I saw you take out those guards than lay down."
-        Rakan-"Hubba hubba. Someone was watching."
-        Xayah- "Of course I am. Such a dork let's go home." I start to walk away.
-        Rakan-"Wait for me!"
-        
-              """)
-        love()
-
 def Lastscene():
     while True:
         sleep(1)
         print(
             """
-            Xayah-As my feathers are falling into all directions with a mind of their own.
-            As I get closer to the North gate I can see traces of Rakan's golden feathers on the ground. He is close........
-            "He better be ok or ELSE!"
-            I stop right in front of two guards. One guard directly in front of me and another holding Rakan by the wrists.
-            I smurk
-            "Honey you ok?"
-            Rakan-"Oh this is nothing, me and the guys were just going for a morning walk"
-            Xayah- I roll my eyes. Even in danger he still has something smart to say
-            Xayah-I snap my fingers and my quills tear through both guards.. leaving their corpes on the ground I take Rakan into my arms
+            Xayah-"He better be okay or ELSE!"
+            I stop right in front of two guards. One guard is directly in front of me, and another holds Rakan by the wrists. I smirk.
+            "Honey, you okay?"
+            Rakan - "Oh, this is nothing. Me and the guys were just going for a walk."
+            Xayah- I roll my eyes. Even in danger, he still has something smart to say. I snap my fingers, and my quills tear through both guards,
+            leaving their corpses on the ground. I take Rakan into my arms.
+            As we sprint towards the North entrance, adrenaline pumping through our veins, we encounter more resistance.
+            Guards pour in from all sides, alerted by the commotion. But together, with our combined skills, we cut through them like a whirlwind.
+            Finally, we reach the North gate. Rakan, though battered, wears a grin.
+            Rakan - "You took your sweet time, love."
+            Xayah - "Oh, shut up. Let's get out of here."
+            We burst through the gate, leaving the prison behind. The wind carries us away as we soar into the night sky,
+            free from the clutches of captivity.
         """
         )
         love()
-
 
 def exit():
     sleep(2)
@@ -373,6 +377,8 @@ def exit():
 
 def love():
     sleep(2)
+    print("Xayah and Rakan's love triumphs over adversity as they escape the prison together.\nTheir journey continues in the vast expanse of Eldoria, where new adventures await.")
+    print("Thank you for guiding Xayah through her tale. If you'd like to embark on another adventure, feel free to create a new story!")
     print("Hoped you enjoyed the story")
     print("copyright:Carisa Saenz-Videtto")
     sys.exit()
