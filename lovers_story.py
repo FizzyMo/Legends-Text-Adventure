@@ -205,8 +205,8 @@ def RevPlan():
             """
             "Where do I go from here?"\n
 Now faced with a critical decision:
-Option 6: Xayah takes a moment to seek revenge, driven by the burning desire to make those responsible for her anguish pay. 
-Option 7: Xayah chooses to stick to the original plan and escape the prison, determined to find Rakan regardless of the cost. 
+Choice 6: Xayah takes a moment to seek revenge, driven by the burning desire to make those responsible for her anguish pay. 
+Choice 7: Xayah chooses to stick to the original plan and escape the prison, determined to find Rakan regardless of the cost. 
 What does Xayah decide?
         """
         )
@@ -258,7 +258,8 @@ def goChoice():
             I see Rakan\n
 What happens during Xayah's flight?
 Does Xayah get shot down or goes to Rakan?
-8. Shot or  9. Rakan
+Choice: 8. Shot
+Choice: 9. Rakan
         """
         )
 
@@ -298,8 +299,8 @@ def PlanRak():
             Xayah - "Alright. There were four humans. Two in front of Rakan and two behind him.
             They took him to the North entrance. How can I get there from here?"\n
 Now faced with a critical decision:\n
-10: Xayah decides to risk it all and go straight to the gate, driven by urgency and the need to reach Rakan as quickly as possible.
-11: Xayah opts to make a plan, carefully considering the best approach to rescue Rakan without jeopardizing their chances.
+Choice 10: Xayah decides to risk it all and go straight to the gate, driven by urgency and the need to reach Rakan as quickly as possible.
+Choice 11: Xayah opts to make a plan, carefully considering the best approach to rescue Rakan without jeopardizing their chances.
 What does Xayah decide?\n
 Enter your choice (10 or 11)
         """
