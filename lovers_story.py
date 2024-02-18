@@ -75,13 +75,13 @@ def scene1():
                 elif choice == 2:
                     print(
                         """
-                        Rakan-He leaps back and forth between the walls leading the guards away.
-                        Xayah-"I knew you could do it <3"
-                        Rakan-"I know"
-                        Xayah-My god I don't know if I want to slap him, kiss him, or both
-                        I shake my head
-                        Rakan-He walks over to Xayah "Your soul belongs to me"
-                        Xayah-I touch Rakan face "Lets go"
+            Rakan-He leaps back and forth between the walls leading the guards away.
+            Xayah-"I knew you could do it <3"
+            Rakan-"I know"
+            Xayah-My god I don't know if I want to slap him, kiss him, or both
+            I shake my head.
+            Rakan-He walks over to Xayah "Your soul belongs to me"
+            Xayah-I touch Rakan face "Lets go"
                         """
                     )
                     togetherRakan()
@@ -127,10 +127,20 @@ def togetherRakan():
     while True:
         sleep(1)
         print("""
-        Xayah-I stare deep into Rakan's eyes. "You know we could die right?"
-        Rakan- "Babe nothing can stop us". He then dips Xayah into a romantic kiss.
-        As we head closer to the gate. Rakan goes ahead. 
-        While Xayah waits for moment to create chaos on those who put them in prison.
+            Xayah - The wind starts to pick up, and I take advantage of the opportunity to climb higher.
+            Not knowing how long this favorable breeze will persist, I laugh aloud, my laughter resonating across the atmosphere as I expand my wings.
+            I'm lifted above the jail premises by the currents, giving me a higher view of the landscape.
+            My gaze focuses on Rakan as I soar; he is quick and nimble, leading the guards on a risky chase between the walls.
+            I feel a mixture of pride and frustration as I watch his acrobatics below.
+            I descend softly and land close to Rakan as he gathers his breath.
+            Xayah- "I knew you could do it <3"
+            Rakan: "I am know."
+            Xayah - My conflicting emotions manifest, unsure whether to slap him, kiss him, or perhaps a combination of both.
+            Shaking my head, I approach Rakan.
+            Rakan strides over, a mischievous grin on his face.
+            Rakan - "Your soul belongs to me."
+            Xayah gently touches Rakan's face, a mixture of affection and determination in her eyes."
+            Xayah - "Let's go."
         """
         )
         goChoice()
@@ -141,20 +151,23 @@ def faceHumansOrRakan():
         sleep(1)
         print(
             """
-            Xayah- I shoot up from my depression. Dust off my feathers. Get my mind straight and think of how to find Rakan.
-            He needs me!
-            I dart out of the forest and in front of me is the enemy. HUMANS!
-            I stare directly into their soul and without even realizing it. My feathers are entering their bodies.
-            More guards are coming from all directions. If I don't find a way out I am going to be surrounded soon.
-            Noise from nearby wall-"BOOM"
-            Xayah-"Huh"\n
-                    
-What is the noise that Xayah heard?\n
-Enter your choice: 4. Rakan or 5. Human
+            Xayah moves in the direction of the gate. She takes a moment to step back,
+            preparing to wreak havoc on those who have imprisoned her and taken Rakan.
+            Xayah laughs out loud as she is carried effortlessly by the wind across the jail grounds,
+            enjoying the freedom of flight and the vast space. Gazing downward from this perspective,
+            she witnesses Rakan deftly dodging the approaching guards.
+            Suddenly, there's danger as I float through the air. Crossbow-wielding enforcers in the air arrive on magical gliders.
+            Xayah is in their sights.
+            She floats through the air, suddenly overcome with a sense of threat.
+            Enforcement on magical gliders bearing crossbows draw near. Their sights are set on Rakan.
+            Now is the crucial moment for Xayah to decide:\n
+Choice 4: As she continues to fly in the direction of Rakan, Xayah makes evasive maneuvers in an effort to dodge the incoming arrows.
+Choice 5: Driven by fury, Xayah makes the decision to confront the enforcers directly in an effort to remove the threat and safeguard Rakan.      
+            
         """
         )
         while True:
-            c1 = input("Enter 4. Rakan or 5. Human: ")
+            c1 = input("Enter 4 or 5: ")
             if c1.isdigit() and int(c1) in (4, 5):
                 choice = int(c1)
                 if choice == 4:
