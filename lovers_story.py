@@ -26,7 +26,7 @@ def main():
         else:
             print("Invalid input! Please enter a name without numbers or punctuation.")
     
-    # sleep(5)
+    sleep(5)
     clear_screen()
     print("Yet, today is not about summoner spells or pixelated battles; it's about an adventure untold.")
     print("A choose-your-own odyssey where the destiny of two enchanting soulmates, Xayah and Rakan, lies in your hands.")
