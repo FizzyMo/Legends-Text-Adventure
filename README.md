@@ -24,7 +24,7 @@ Make sure you have Python installed on your system.
  ![](XayRak_gif.gif)
  ---
  ## Code Visual After
- ![](finished.preview.mp4)
+ ![](finished.preview.gif)
  ---
  ## How to create a choose your own adventure story
 1. Define the Setting:
