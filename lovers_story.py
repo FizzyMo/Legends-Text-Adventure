@@ -234,7 +234,7 @@ What does Xayah decide?
                 elif choice == 7:
                     print(
                         """
-                        Xayah-"Time to get fight"
+                        Xayah-"Time to fight"
                         """
                     )
                     return
