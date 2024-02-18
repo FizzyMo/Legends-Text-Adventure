@@ -38,8 +38,6 @@ def clear_screen():
     if os.name == 'nt':  # For Windows
         os.system('cls')
     
-
-
 # insert story
 def scene1():
     while True:
@@ -167,7 +165,7 @@ Choice 5: Driven by fury, Xayah makes the decision to confront the enforcers dir
         """
         )
         while True:
-            c1 = input("Enter 4 or 5: ")
+            c1 = input("Enter 4: Fly or 5 Fury: ")
             if c1.isdigit() and int(c1) in (4, 5):
                 choice = int(c1)
                 if choice == 4:
@@ -244,8 +242,6 @@ def RevPlan():
             """
                 )
 
-
-
 def goChoice():
     while True:
         sleep(1)
@@ -261,7 +257,7 @@ def goChoice():
             
             Does Xayah get shot down or goes to Rakan?
             
-            Type your choice: 8. Shoot or  9. Rakan
+            Type your choice: 8. Shot or  9. Rakan
         """
         )
 
@@ -291,21 +287,20 @@ def goChoice():
                 ("Please type a valid choice: 8 or 9")
             """
                 )
-
-
 def PlanRak():
     while True:
         sleep(1)
         print(
             """
-            Xayah-"Alright..
-            There was four humans. Two in front of Rakan and two behind him."
-            "They took him to the North entrance. How can I get there from here?"
-            
-            Does Xayah risk it all and go straight to the gate?
-            Or
-            Make a plan?
-            Type:10. Risk or 11. Plan
+            Xayah-"There you are."
+            Xayah takes a moment to assess the situation.
+            Xayah-"Alright. There were four humans. Two in front of Rakan and two behind him.
+            They took him to the North entrance. How can I get there from here?"\n
+            Now faced with a critical decision:\n
+            Option 10: Xayah decides to risk it all and go straight to the gate, driven by urgency and the need to reach Rakan as quickly as possible.
+            Option 11: Xayah opts to make a plan, carefully considering the best approach to rescue Rakan without jeopardizing their chances.
+            What does Xayah decide?
+            Enter your choice (10 or 11)
         """
         )
     
