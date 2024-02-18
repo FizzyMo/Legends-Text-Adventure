@@ -26,7 +26,7 @@ def main():
         else:
             print("Invalid input! Please enter a name without numbers or punctuation.")
     
-    sleep(5)
+    # sleep(5)
     clear_screen()
     print("Yet, today is not about summoner spells or pixelated battles; it's about an adventure untold.")
     print("A choose-your-own odyssey where the destiny of two enchanting soulmates, Xayah and Rakan, lies in your hands.")
@@ -51,22 +51,24 @@ def scene1():
             Xayah-Rakan is the worst! I swear he is focusing on his perfect golden feathers. Let's hope he doesn't mess up the plan. 
             Rakan-"Huh? What??"
             Xayah-"The guards. You'll distract the guards away from the western gate. Once that happens I'll throw a feather into the sky"
+            Rakan-"You got it babe"
         """
         )
 
         print("What do you think Rakan does next?")
         print(
-            " 1. Mess up the plan and gets caught\n 2. Distracts the guards and meets up with Xayah\n Type Mess or Distracts"
+            " 1. Mess up the plan and gets caught\n 2. Distracts the guards and meets up with Xayah\n"
         )
 
         while True:
-            c1 = input("Enter your choice (1 or 2):")
+            c1 = input("Enter your choice (1 or 2): ")
             if c1.isdigit() and int(c1) in (1, 2):
                 choice = int(c1)
                 if choice == 1:
                     print(
-                        """Xayah-I am watching Rakan from a distance. Alright things are going smooth. Time to move. "NO NO!! PLEASE! RAKAN!!!!!!!!!!!!!!!!!!!!!!"
-                        """
+        """
+            Xayah-I am watching Rakan from a distance. Alright things are going smooth. Time to move. "NO NO! PLEASE! RAKAN!"
+        """
                     )
                     layOnGround()
                     return
@@ -78,14 +80,14 @@ def scene1():
                         Rakan-"I know"
                         Xayah-My god I don't know if I want to slap him, kiss him, or both
                         I shake my head
-                        Rakan-He walks over to Xayah "Your soul belongs to me....."
+                        Rakan-He walks over to Xayah "Your soul belongs to me"
                         Xayah-I touch Rakan face "Lets go"
                         """
                     )
                     togetherRakan()
                     return
             else:
-                print("Please type a valid choice: 1 or 2")
+                print("Please type a valid choice: 1 or 2 ")
 
 def layOnGround():
     while True:
@@ -93,10 +95,10 @@ def layOnGround():
         print(
             """
             Xayah-I passed out from the trauma of seeing my love being taken away by HUMANS!
-            ........ I slowly start to wake up
+            I slowly start to wake up
             What is the first thing Xayah sees when she opens her eyes?
             You continue to lay on the ground with a broken heart\n
-            Type your choice: 3
+Type your choice: 3
             """
         )
         
@@ -105,13 +107,13 @@ def layOnGround():
             c1 = input("Enter 3: ")
             if c1.isdigit() and int(c1) == 3:
                 print(
-                    """
-                    Xayah-As I continue to lay here. All I can feel is heartbreak. Heartbreak from seeing humans even think of touching him.
-                    We are partners!
-                    NOOOO we are not just partners.
-                    Rakan is my soul mate, my lover, my best friend.
-                    My mind begins to race with rage!
-                    """
+                """
+            Xayah-As I continue to lay here. All I can feel is heartbreak. Heartbreak from seeing humans even think of touching him.
+            We are partners!
+            NOOOO we are not just partners.
+            Rakan is my soul mate, my lover, my best friend.
+            My mind begins to race with rage!
+               """
                 )
                 faceHumansOrRakan()
                 return
@@ -127,7 +129,7 @@ def togetherRakan():
         print("""
         Xayah-I stare deep into Rakan's eyes. "You know we could die right?"
         Rakan- "Babe nothing can stop us". He then dips Xayah into a romantic kiss.
-        As we head closer to the gate. Rakan goes ahead to create a distraction. 
+        As we head closer to the gate. Rakan goes ahead. 
         While Xayah waits for moment to create chaos on those who put them in prison.
         """
         )
@@ -147,8 +149,8 @@ def faceHumansOrRakan():
             Noise from nearby wall-"BOOM"
             Xayah-"Huh"\n
                     
-            What is the noise that Xayah heard?\n
-            Enter your choice: 4. Rakan or 5. Human
+What is the noise that Xayah heard?\n
+Enter your choice: 4. Rakan or 5. Human
         """
         )
         while True:
@@ -158,7 +160,7 @@ def faceHumansOrRakan():
                 if choice == 4:
                     print(
                         """
-                        Xayah- In a fit of rage I kill everyone in sight. Knowing there is nothing left.
+            Xayah- In a fit of rage I kill everyone in sight. Knowing there is nothing left.
                         """
                     )
                     RevPlan()
@@ -197,18 +199,18 @@ def RevPlan():
         sleep(1)
 
         while True:
-            c1= input("Enter your choice (6 or 7):") 
+            c1= input("Enter your choice (6 or 7): ") 
             if c1.isdigit() and int(c1) in (6, 7):
                 choice = int(c1)
                 if choice == 6:
                     print(
                         """
-                Xayah-I take a moment to slow down my mind to remember every detail of the humans who took Rakan.
-                What did they look like?
-                Where did they take Rakan?
-                How will I get him back?
-                What do I need to pull it off?
-                Am I strong enough?
+            Xayah-I take a moment to slow down my mind to remember every detail of the humans who took Rakan.
+            What did they look like?
+            Where did they take Rakan?
+            How will I get him back?
+            What do I need to pull it off?
+            Am I strong enough?
                 """
                     )
                     sleep(1)
@@ -244,20 +246,20 @@ def goChoice():
             
             What happens during Xayah's flight?
             
-            Does Xayah get shot down or see Rakan?
+            Does Xayah get shot down or goes to Rakan?
             
             Type your choice: 8. Shoot or  9. Rakan
         """
         )
 
         while True:
-            c1 = input("Enter your choice (8 or 9):") 
+            c1 = input("Enter your choice (8 or 9): ") 
             if c1.isdigit() and int(c1) in (8, 9):
                 choice = int(c1)
                 if choice == 8:
                     print(
                         """
-                You died
+            You died
                 """
                     )
                     exit()
@@ -290,7 +292,7 @@ def PlanRak():
             Does Xayah risk it all and go straight to the gate?
             Or
             Make a plan?
-            Type:Risk or Plan
+            Type:10. Risk or 11. Plan
         """
         )
     
