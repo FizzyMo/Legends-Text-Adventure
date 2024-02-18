@@ -20,8 +20,11 @@ Make sure you have Python installed on your system.
 
 1. After the game ends, restart program to try again.
 
-## Code Visual
+## Code Visual Before
  ![](XayRak_gif.gif)
+ ---
+ ## Code Visual After
+ ![](finished.preview.mp4)
  ---
  ## How to create a choose your own adventure story
 1. Define the Setting:
