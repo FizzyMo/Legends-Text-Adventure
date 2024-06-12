@@ -63,11 +63,11 @@ You venture into the forest, hoping to find clues about Rakan's whereabouts...
 ```
 ## Visuals
 ### Code Visual Before
- ![](XayRak_gif.gif)<br>
+ ![](/assets/XayRak_gif.gif)<br>
  Youtube Walk Through [Demo](https://youtu.be/GgRnyEVJWnc)
  ---
 ### Code Visual After
- ![](finished.preview.gif)<br>
+ ![](/assets/finished.preview.gif)<br>
 
  Youtube Walk Through [Demo](https://youtu.be/sROQBv0l9PQ)
  ---
