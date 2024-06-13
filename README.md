@@ -5,9 +5,14 @@ Welcome to the Lover's Story game, a text-based adventure set in the League of L
 * [Description](#description)
 * [Features](#features)
 * [Steps to Run](#steps-to-run)
-* [Usage](#usage)
+* [Game Flow](#game-flow)
 * [Visuals](#visuals)
 * [How to Create a Choose Your Own Adventure Story](#how-to-create-a-choose-your-own-adventure-story)
+* [Technologies](#technologies)
+* [Author](#author)
+* [Contact](#contact)
+* [Acknowledgments](#acknowledgments)
+* [Disclaimer](#Disclaimer)
 
 ## Description
 In this interactive story, you play as Xayah, a brave adventurer seeking to rescue her soulmate, Rakan, from the clutches of human captors. Navigate through choices and shape the destiny of this enchanting couple. Your decisions will influence the outcomes and lead to different endings.
@@ -50,7 +55,7 @@ In this interactive story, you play as Xayah, a brave adventurer seeking to resc
    * Based on your choices, the game will progress, and different outcomes will be presented.
    * After the game ends, restart the program to try again.
   
-## Usage
+## Game Flow
 Here is an example of how the gameplay might look:
 ```
 Welcome to Lover's Story!
@@ -91,6 +96,27 @@ You venture into the forest, hoping to find clues about Rakan's whereabouts...
 9. **Edit and polish:**
    * Adjust your narrative in light of comments. To improve the reading experience overall, make adjustments to the pacing, vocabulary, and selections.
 
+## Technologies
+* **Python:** The core programming language used to create the story's logic and interactivity.
+* **Visual Studio Code:** The development environment used to write and edit the Python code.
+* **Libraries:**
+  * **sys:** Used to exit the program.
+  * **time:** Used for delays and pauses.
+  * **os:** Used to clear the terminal screen.
+ 
+## Author
+**Carisa Saenz-Videtto**
+
+## Contact
+carisasaenz@gmail.com
+
+## Acknowledgments
+* Riot Games for creating the world of League of Legends and its characters.
+* The Python community for providing a robust programming language and a wealth of resources.
+* Visual Studio Code for a powerful and efficient development environment.
+
+## Disclaimer
+This project is not affiliated with Riot Games or League of Legends. All characters and assets are owned by Riot Games.
 
 
 
