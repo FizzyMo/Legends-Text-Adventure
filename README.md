@@ -1,3 +1,5 @@
+> [!NOTE]
+> This README is currently being updated. Some sections may be incomplete or undergoing revisions. Thank you for your patience!
 # Lover's Story
 Welcome to the Lover's Story game, a text-based adventure set in the League of Legends universe.
 
