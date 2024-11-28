@@ -1,66 +1,98 @@
-> [!NOTE]
-> This README is currently being updated. Some sections may be incomplete or undergoing revisions. Thank you for your patience!
-# Lover's Story
-Welcome to the Lover's Story game, a text-based adventure set in the League of Legends universe.
-
-## Table of Contents
-* [Description](#description)
-* [Features](#features)
-* [Steps to Run](#steps-to-run)
-* [Game Flow](#game-flow)
-* [Visuals](#visuals)
-* [How to Create a Choose Your Own Adventure Story](#how-to-create-a-choose-your-own-adventure-story)
-* [Technologies](#technologies)
-* [Author](#author)
-* [Contact](#contact)
-* [Acknowledgments](#acknowledgments)
-* [Disclaimer](#Disclaimer)
-
-## Description
-In this interactive story, you play as Xayah, a brave adventurer seeking to rescue her soulmate, Rakan, from the clutches of human captors. Navigate through choices and shape the destiny of this enchanting couple. Your decisions will influence the outcomes and lead to different endings.
-
-## Features
-* Immersive text-based gameplay
-* Multiple endings based on player choices
-* Rich storytelling set in the League of Legends universe
-
-## Steps to Run
 > [!IMPORTANT]
-> **Make sure you have Python installed on your system.**
+> Major updates to this repo and README are underway. Some features or content may be temporarily unavailable or incomplete. Thank you for your patience!
 
-1. Clone the repository:
-   * Open a terminal or command prompt.
-   * Navigate to the directory where you want to clone the repository.
-   * Run the following command to clone the repository:
-     ```
-     git clone https://github.com/FizzyMo/lovers-story.git
-     ```
-   * Change into the cloned repository directory:
-     ```
-     cd lovers-story
-     ```
-2. Navigate to the directory:
-   * Open a terminal or command prompt.
-   * Navigate to the directory where the 'lovers_story.py' file is saved:
-    ```
-    cd path/to/your/lovers_story.py
-    ```
+![Header](https://github.com/user-attachments/assets/a039ce3a-a652-4d0a-be3e-b0ee4b55c83c)
+<h1 align="center">A League of Legends Interactive Narrative</h1>
 
-3. Run the game:
-   * Execute the following command to start the game:
-    ```
-    python lovers_story.py
-    ```
+An immersive, **text-based** interactive narrative set in the League of Legends universe, allowing players to experience a unique **storytelling** adventure through player-driven choices.
 
-4. Play the game:
-   * Follow the instructions provided in the game to make choices by entering the corresponding numbers.
-   * Based on your choices, the game will progress, and different outcomes will be presented.
-   * After the game ends, restart the program to try again.
-  
-## Game Flow
-Here is an example of how the gameplay might look:
-```
-Welcome to Lover's Story!
+<h2 align="center">Table of Contents</h2>
+
+* [Project Overview](#project-overview)
+	* [What the Project Aims to Achieve](#what-the-project-aims-to-achieve)
+	* [Project Goals](#project-goals)
+	* [Key Features](#key-features)
+ * [Getting Started](#getting-started)
+	* [Prerequisites](#prerequisites)
+    * [Setup Instructions](#setup-instructions)
+    * [Installation](#installation)
+ * [Story Creation Guide](story-creation-guide)
+ * [Features](#features)
+	* [Examples](#examples)
+ * [Technical Requirements](#technical-requirements)
+	* [Hardware Requirements](#software-requirements)
+	* [Software Requirements](#software-requirements)
+	* [Network Requirements](#software-requirements)
+ * [Technical Details](#technical-details)
+    * [Architecture](#architecture)
+    * [Project Structure](#project-structure)
+    * [Libraries](#libraries)
+  * [License and Copyright](#license-and-copyright)
+    * [License](#license)
+    * [Attribution](#attribution)
+ * [Contact and Support](#contact-and-support)
+    * [Contact Information](#contact-information)
+	    * [About the Developer](#about-the-developer)
+    * [Disclaimer](#disclaimer)
+ * [Support Resources](#support-resources)
+    * [FAQs](#faqs)
+  ***  
+  ## Project Overview
+  ### What the Project Aims to Achieve
+This interactive story transports players into the world of **Xayah** and **Rakan**, two legendary characters from the League of Legends universe. Players step into the role of Xayah, embarking on a critical mission to rescue her soulmate, Rakan, from human captors.
+The narrative is designed as a **Choose Your Own Adventure (CYOA)** experience, where each decision fundamentally alters the story's trajectory. Unlike traditional linear narratives, this game empowers players to shape the protagonist's journey through strategic choices, leading to multiple potential outcomes and endings.
+
+ ### Project Goals
+* Create an engaging, interactive storytelling experience
+* Demonstrate the potential of narrative branching in game design
+* Provide an accessible entry point into interactive storytelling
+* Showcase **Python's** capabilities in creating dynamic narrative experiences
+
+ ### Key Features
+
+-   Immersive text-based gameplay
+-   Multiple narrative branches and endings
+-   Player-driven storytelling
+-   Rich, character-driven narrative
+-   Simple, intuitive interface
+-   Replayability through different story paths
+
+ ## Getting Started
+ ### Prerequisites
+* [Python](https://www.python.org/downloads/) 3.7 or higher
+* [Git](https://git-scm.com/downloads)
+* [Visual Studio (VS)](https://visualstudio.microsoft.com/downloads/)
+* Basic understanding of Python
+* A interactive story
+
+ ### Setup Instructions
+1. Ensure your prerequisites are installed on your system
+2. Clone the repository
+3. Navigate to the project directory
+4. Run the Python script
+
+ ### Instructions
+ * Clone the repository
+``` git clone https://github.com/FizzyMo/lovers-story-CYOA.git ```
+ * Navigate to project directory
+ ``` cd lovers-story-CYOA ```
+ * Run the game
+  ``` python lovers_story-CYOA.py ```
+ ### Installation
+ No installation required besides the **prerequisites**.
+ 
+  ## Features
+* Interactive storytelling mechanic
+* Dynamic narrative branching
+* Player choice tracking
+* Multiple narrative outcomes
+* Minimal system resource requirements
+
+ ### Examples
+* Make choices that shape the destiny of Xayah and Rakan.
+* Experience multiple endings based on your choices.
+* Immerse yourself in the rich storytelling set in the League of Legends universe.
+ ```Welcome to Lover's Story!
 1. Search for Rakan in the forest
 2. Head to the village
 
@@ -68,63 +100,56 @@ Enter your choice: 1
 
 You venture into the forest, hoping to find clues about Rakan's whereabouts...
 ```
-## Visuals
-### Code Visual Before
- ![](/assets/XayRak_gif.gif)<br>
- Youtube Walk Through [Demo](https://youtu.be/GgRnyEVJWnc)
- ---
-### Code Visual After
- ![](/assets/finished.preview.gif)<br>
+ ## Technical Requirements
+ ### Software Requirements
+ * [Python](https://www.python.org/downloads/)
+ * [Visual Studio Code](https://visualstudio.microsoft.com/downloads/)
+ ## Technical Details
+ ### Architecture
+The game is built using a simple text-based architecture, with a Python script that handles user input and provides the game logic.
 
- Youtube Walk Through [Demo](https://youtu.be/sROQBv0l9PQ)
- ---
- ## How to Create a Choose Your Own Adventure Story
-1. **Define the Setting:**
-    * Describe the setting in which your narrative is set. This could be a modern day setting, a sci-fi universe, or a fantasy world.
-2. **Create Characters:**
-    * Create characters with unique goals, personalities, and histories. Think about the main character or characters.
-3. **Describe the Storyline:**
-    * Create a basic storyline that outlines the major character arc and important moments. Point out places where the reader can make decisions that will affect the story's course.
-4. **Points of Decision in Design:**
-    * Identify the points in the narrative where the reader is forced to make a decision. Every decision should have a distinct result or implication.
-5. **Create Consequences:**
-    * Describe the effects of each decision. These repercussions could be anything from little storyline adjustments to big, game-altering discoveries.
-6. **Branching Paths:**
-    * Make sure the decisions taken have a logical branching effect on the tale. Consider the ways in which the reader's choices will cause the story to converge and diverge.
-7. **Maintain Variable Tracking:**
-    * Keep consistency and update any variables or aspects that your story tracks (such as character stats or inventory) as the plot develops.
-8. **Test Your Story:**
-    * Try reading the CYOA(Choose Your Own Adventure Story) story aloud to someone else or yourself to see any errors in logic, story points, or decision-making. Make sure every path makes sense and is interesting.
-9. **Edit and polish:**
-   * Adjust your narrative in light of comments. To improve the reading experience overall, make adjustments to the pacing, vocabulary, and selections.
+ ### Project Structure
+ ```
+lovers-story/
+│
+├── lovers_story-CYOA.py
+├── README.md 
+```
 
-## Technologies
-* **Python:** The core programming language used to create the story's logic and interactivity.
-* **Visual Studio Code:** The development environment used to write and edit the Python code.
-* **Libraries:**
-  * **sys:** Used to exit the program.
-  * **time:** Used for delays and pauses.
-  * **os:** Used to clear the terminal screen.
- 
-## Author
+ The project consists of a single Python script `lovers-story-CYOA` that contains the game logic and a 
+README file that provides instructions and information about the game.
+
+ ### Libraries
+ * **sys:** used to exit the program
+ *  **time:** used for delays and pauses
+ * **os:** used to clear the terminal screen
+ ## Wiki
+ ### Wiki Overview
+
+ ## License and Copyright
+ ### License
+ This project is licensed under [MIT License](https://github.com/FizzyMo/BeyondBackend.Python-Adventure/blob/master/LICENSE)
+ ### Attribution
+  * Inspired by [League of Legends](https://www.leagueoflegends.com/en-us/) narrative
+ * Characters and universe owned by [Riot Games](https://www.riotgames.com/en)
+ * Original implementation by Carisa Saenz-Videtto
+  
+ ## Contact and Support
+ ### Contact Information
+[Email](carisasaenz@gmail.com)
+[Instagram](https://www.instagram.com/devsilencewritten/?hl=en)
+[Blog](https://beyondbackend.hashnode.dev/)
+[GitBook](https://beyondbackend.gitbook.io/beyond-backend-docs)
+[LinkedIn](https://www.linkedin.com/in/carisa-saenz-videtto-669929173/)
+[Tumblr](https://www.tumblr.com/blog/silencewritten)
+
+#### About the Developer
 **Carisa Saenz-Videtto**
 
-## Contact
-carisasaenz@gmail.com
-
-## Acknowledgments
-* Riot Games for creating the world of League of Legends and its characters.
-* The Python community for providing a robust programming language and a wealth of resources.
-* Visual Studio Code for a powerful and efficient development environment.
-
-## Disclaimer
+### Disclaimer
 This project is not affiliated with Riot Games or League of Legends. All characters and assets are owned by Riot Games.
-
-
-
-
-
-
-
-
-
+## Support Resources 
+### FAQs
+**Q:** Do I need to know League of Legends to enjoy the game?
+**A:** No, the story is accessible to all players.
+ 
