@@ -89,7 +89,7 @@ The narrative is designed as a **Choose Your Own Adventure (CYOA)** experience, 
 - Navigate to project directory
   `cd lovers-story-CYOA`
 - Run the game
-  `python lovers_story-CYOA.py`
+  `python lovers-story-CYOA.py`
 
 ### Installation
 
@@ -135,8 +135,9 @@ The game is built using a simple text-based architecture, with a Python script t
 
 ```
 lovers-story/
-├── lovers_story-CYOA.py
+├── lovers-story-CYOA.py
 ├── README.md
+└── LICENSE
 ```
 
 The project consists of a single Python script `lovers-story-CYOA` that contains the game logic and a
@@ -159,7 +160,7 @@ This [Wiki](https://github.com/FizzyMo/BeyondBackend.Python-Adventure/wiki) is y
 - **Interactive Storytelling:** Shape Xayah's fate through meaningful choices, experiencing a unique adventure with every playthrough.
 - **Multiple Endings:** Your decisions have real consequences, leading to a variety of satisfying (and sometimes heartbreaking) conclusions.
 - **League of Legends Universe:** Immerse yourself in the rich lore of [Ionia](https://universe.leagueoflegends.com/en_US/region/ionia/) as you navigate familiar landscapes and encounter iconic characters.
-- **Xayah and Rakan's Story:** Experience a captivating tale of love, loss, and resilience, inspired by the legendary [Vastaya’s](https://universe.leagueoflegends.com/en_US/race/vastaya/) duo.
+- **Xayah and Rakan's Story:** Experience a captivating tale of love, loss, and resilience, inspired by the legendary [Vastaya](https://universe.leagueoflegends.com/en_US/race/vastaya/) duo.
 - **Easy to Play:** Jump right into the action with a simple, text-based interface and intuitive gameplay.
 - **Behind-the-Scenes:** Explore the [Wiki](https://github.com/FizzyMo/BeyondBackend.Python-Adventure/wiki) to learn about the project's development, narrative design philosophy, and technical details.
 - **Community Resources:** Find answers to your questions in the FAQs and support resources.
