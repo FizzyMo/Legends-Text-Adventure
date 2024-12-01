@@ -1,5 +1,5 @@
-> [!IMPORTANT]
-> Major updates to this repo and README are underway. Some features or content may be temporarily unavailable or incomplete. Thank you for your patience!
+> [!NOTE]
+> This repository is currently undergoing updates. While changes are being made to the **Wiki**, the project repository and README remain up-to-date and reliable.
 
 ![Header](https://github.com/user-attachments/assets/a039ce3a-a652-4d0a-be3e-b0ee4b55c83c)
 
