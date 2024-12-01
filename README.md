@@ -207,6 +207,26 @@ Have questions, feedback, or just want to connect? I'd love to hear from you! Ch
 ## Support Resources
 
 ### FAQs
+1. **Q:** Do I need to be familiar with League of Legends to enjoy this interactive story?
 
-**Q:** Do I need to know League of Legends to enjoy the game?
-**A:** No, the story is accessible to all players.
+    **A:** Not at all! While the story is set in the League of Legends universe and features familiar characters like **Xayah** and **Rakan**, it's designed to be enjoyable even for those who haven't played the game. The narrative stands on its own, focusing on a compelling story of love, loss, and resilience.
+
+2. **Q:** What's your process when you hit a roadblock during development?
+
+    **A:** For this interactive narrative the main challenge I faced in this project was the code stonewalling the storytelling. I realized I was working harder not smarter.
+
+    I took a breather put on my creative writing hat and switched gears. I grabbed my trusty notebook and outlined the entire story, mapping out different choices and their outcomes. This gave me a much clearer vision. Next, in order to prevent doing the same work twice, I moved the draft to Word revising the story before ultimately merging it back into the code. Much smoother!
+
+    My **"typical"** method for solving problems is: 
+
+* **Take a Moment to Stop and Inhale:** I physically shut my eyes, inhale deeply a few times, and empty my mind. This is incredibly beneficial! 
+
+* **Assess the Situation:** I use my project notebook to jot down what's **working**, what's **not**, and where I'm **headed**. It's like taking inventory of my progress. 
+
+* **Analyze and separate:** I break down the issues into **smaller** more manageable parts. Breaking it down into smaller chunks can feel less overwhelming.  
+
+  **Refer to Resources:** If I'm really stuck, I'll look for inspiration in other interactive narratives, games, or even books. Seeing how others approach similar challenges can spark new ideas.
+
+3. **Q:** How long did it take to develop?
+
+    **A:** This project is ongoing! The initial development phase took 2 weeks that I started in February, 2024 but I see it as an evolving passion project.
